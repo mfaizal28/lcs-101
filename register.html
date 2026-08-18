@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Your Interest — LCS-101</title>
+  <meta name="description" content="Register your interest in GCSE or A-Level Computer Science tutoring with LCS-101. Online group classes or private 1-to-1 lessons available.">
+  <link rel="canonical" href="https://lcs-101.com/register.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/logo.png" alt="Learn Computer Science" class="nav-logo-img">
+      <span class="nav-logo-text">LCS-101</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/#programs">Programs</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#testimonials">Testimonials</a></li>
+      <li><a href="/#resources">Resources</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="/register.html" class="nav-cta">Register Interest</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<section class="register-page">
+  <div class="container">
+    <h1 style="font-size:clamp(32px,5vw,48px);margin-bottom:8px">Register your interest</h1>
+    <p style="font-size:17px;color:var(--text-2);max-width:560px;line-height:1.7;margin-bottom:0">Fill in the form below and we'll be in touch within 24 hours to discuss the best option for you.</p>
+
+    <div class="register-wrapper">
+      <div class="register-info">
+        <h2>Why choose LCS-101?</h2>
+        <p>We offer flexible Computer Science tutoring for GCSE and A-Level students. Whether your child needs help getting started with programming or is aiming for an A* at A-Level, we have a program that fits.</p>
+
+        <ul class="register-features">
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><strong>GCSE &amp; A-Level</strong> &mdash; full curriculum coverage across all major exam boards (OCR, AQA, Edexcel, iGCSE)</span>
+          </li>
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><strong>500+ students taught</strong> &mdash; over 20 years of IT experience and 10+ years teaching</span>
+          </li>
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><strong>Online group classes</strong> &mdash; recorded Zoom lessons covering the full curriculum</span>
+          </li>
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><strong>Private 1-to-1</strong> &mdash; personalised tuition via Zoom or Teams on your schedule</span>
+          </li>
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><strong>A-Level NEA support</strong> &mdash; guidance on your programming project from planning to submission</span>
+          </li>
+          <li>
+            <span class="check"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></span>
+            <span><strong>No commitment</strong> &mdash; register your interest with no obligation</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="register-form-card">
+        <h3>Your details</h3>
+        <form class="register-form" action="https://formsubmit.co/info@lcs-101.com" method="POST">
+          <div class="form-group">
+            <span class="form-label">Parent/guardian name <span class="req">*</span></span>
+            <input type="text" name="parent_name" required>
+          </div>
+          <div class="form-group">
+            <span class="form-label">Student name <span class="req">*</span></span>
+            <input type="text" name="student_name" required>
+          </div>
+          <div class="form-group">
+            <span class="form-label">Email address <span class="req">*</span></span>
+            <input type="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <span class="form-label">Phone number</span>
+            <input type="tel" name="phone">
+          </div>
+          <div class="form-group">
+            <span class="form-label">Level <span class="req">*</span></span>
+            <select name="level" required>
+              <option value="" disabled selected>Select level</option>
+              <option value="GCSE">GCSE</option>
+              <option value="A-Level">A-Level</option>
+              <option value="Not sure">Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <span class="form-label">Preferred program</span>
+            <select name="program">
+              <option value="" disabled selected>Select a program</option>
+              <option value="Group Classes">Group Classes (online, &pound;40/month)</option>
+              <option value="Private 1-to-1 GCSE">Private 1-to-1 GCSE (&pound;18/hour)</option>
+              <option value="Private 1-to-1 A-Level">Private 1-to-1 A-Level (&pound;25/hour)</option>
+              <option value="Not sure">Not sure yet</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <span class="form-label">Anything else we should know?</span>
+            <textarea name="message" placeholder="Current grade, exam board, specific topics, etc."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="border:none;width:100%;justify-content:center">Register interest &rarr;</button>
+          <input type="hidden" name="_next" value="https://lcs-101.com/register.html?sent=1">
+          <input type="hidden" name="_subject" value="New Registration Interest">
+          <input type="hidden" name="_captcha" value="false">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-copy">&copy; 2026 Learn Computer Science 101</div>
+    <ul class="footer-links">
+      <li><a href="/#programs">Programs</a></li>
+      <li><a href="/#resources">Resources</a></li>
+      <li><a href="/#blog">Blog</a></li>
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="https://app.tutorbird.com" target="_blank" rel="noopener">Student Portal</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+});
+</script>
+
+</body>
+</html>

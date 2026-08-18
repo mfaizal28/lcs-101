@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Computer Science 101 — GCSE &amp; A-Level Tutoring</title>
+  <meta name="description" content="Expert GCSE and A-Level Computer Science tutoring — online group lessons and private 1-to-1 tuition. Over 20 years of IT experience and 10+ years teaching. 500+ students taught.">
+  <meta name="keywords" content="GCSE Computer Science tutor, A-Level Computer Science lessons, Python GCSE course, computer science tutoring UK, GCSE CS revision">
+  <link rel="canonical" href="https://lcs-101.com">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Learn Computer Science 101 — GCSE &amp; A-Level Tutoring">
+  <meta property="og:description" content="Expert GCSE and A-Level Computer Science tutoring. Online group and private 1-to-1 lessons. 500+ students taught.">
+  <meta property="og:url" content="https://lcs-101.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<!-- ── Nav ──────────────────────────────────────────────── -->
+<nav class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/logo.png" alt="Learn Computer Science" class="nav-logo-img">
+      <span class="nav-logo-text">LCS-101</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="/register.html" class="nav-cta">Register Interest</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<!-- ── Hero ─────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-particles">
+    <div class="hero-particle"></div>
+    <div class="hero-particle"></div>
+    <div class="hero-particle"></div>
+    <div class="hero-particle"></div>
+    <div class="hero-particle"></div>
+    <div class="hero-particle"></div>
+  </div>
+
+  <!-- Floating CS code snippets -->
+  <div class="hero-floating">
+    <div class="hero-float-item"><span class="kw">def</span> <span class="fn">learn</span>(<span class="str">"python"</span>):</div>
+    <div class="hero-float-item"><span class="kw">if</span> grade <span class="op">&gt;=</span> <span class="num">8</span>:</div>
+    <div class="hero-float-item"><span class="kw">for</span> topic <span class="kw">in</span> curriculum:</div>
+    <div class="hero-float-item">binary = <span class="str">"10110"</span></div>
+    <div class="hero-float-item"><span class="kw">class</span> <span class="fn">Student</span>:</div>
+  </div>
+
+  <!-- Orbiting dots -->
+  <div class="hero-orbit">
+    <div class="hero-orbit-ring"></div>
+    <div class="hero-orbit-dot"></div>
+    <div class="hero-orbit-dot"></div>
+  </div>
+
+  <!-- Floating CS concept icons -->
+  <div class="cs-icons">
+    <svg class="cs-icon cs-icon-1" viewBox="0 0 80 80" fill="none">
+      <rect x="10" y="20" width="60" height="40" rx="4" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <line x1="10" y1="32" x2="70" y2="32" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <circle cx="18" cy="26" r="2.5" fill="#f87171" opacity="0.6"/>
+      <circle cx="26" cy="26" r="2.5" fill="#fbbf24" opacity="0.6"/>
+      <circle cx="34" cy="26" r="2.5" fill="#86efac" opacity="0.6"/>
+      <text x="18" y="46" font-family="monospace" font-size="8" fill="rgba(125,211,252,0.5)">print()</text>
+    </svg>
+    <svg class="cs-icon cs-icon-2" viewBox="0 0 80 80" fill="none">
+      <rect x="15" y="10" width="50" height="60" rx="3" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <line x1="22" y1="25" x2="58" y2="25" stroke="rgba(245,212,66,0.3)" stroke-width="1.5"/>
+      <line x1="22" y1="33" x2="50" y2="33" stroke="rgba(125,211,252,0.2)" stroke-width="1.5"/>
+      <line x1="22" y1="41" x2="54" y2="41" stroke="rgba(134,239,172,0.2)" stroke-width="1.5"/>
+      <line x1="22" y1="49" x2="46" y2="49" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+      <line x1="22" y1="57" x2="52" y2="57" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+    </svg>
+    <svg class="cs-icon cs-icon-3" viewBox="0 0 80 80" fill="none">
+      <circle cx="40" cy="18" r="8" stroke="rgba(245,212,66,0.3)" stroke-width="1.5"/>
+      <circle cx="22" cy="55" r="8" stroke="rgba(125,211,252,0.3)" stroke-width="1.5"/>
+      <circle cx="58" cy="55" r="8" stroke="rgba(134,239,172,0.3)" stroke-width="1.5"/>
+      <line x1="35" y1="25" x2="25" y2="48" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <line x1="45" y1="25" x2="55" y2="48" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <line x1="30" y1="55" x2="50" y2="55" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    </svg>
+    <svg class="cs-icon cs-icon-4" viewBox="0 0 80 80" fill="none">
+      <path d="M20 40 L40 20 L60 40 L40 60 Z" stroke="rgba(192,132,252,0.3)" stroke-width="1.5"/>
+      <text x="32" y="44" font-family="monospace" font-size="10" fill="rgba(192,132,252,0.4)">if</text>
+    </svg>
+    <svg class="cs-icon cs-icon-5" viewBox="0 0 80 80" fill="none">
+      <rect x="10" y="15" width="25" height="18" rx="2" stroke="rgba(125,211,252,0.25)" stroke-width="1.2"/>
+      <rect x="45" y="15" width="25" height="18" rx="2" stroke="rgba(134,239,172,0.25)" stroke-width="1.2"/>
+      <rect x="10" y="47" width="25" height="18" rx="2" stroke="rgba(245,212,66,0.25)" stroke-width="1.2"/>
+      <rect x="45" y="47" width="25" height="18" rx="2" stroke="rgba(248,113,113,0.25)" stroke-width="1.2"/>
+      <line x1="35" y1="24" x2="45" y2="24" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <line x1="35" y1="56" x2="45" y2="56" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <line x1="22" y1="33" x2="22" y2="47" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <line x1="58" y1="33" x2="58" y2="47" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Now enrolling for September 2026
+      </div>
+      <h1>Simplifying <span class="highlight">Computer Science</span> for students</h1>
+      <p class="subtitle">Expert GCSE and A-Level Computer Science tutoring that transforms committed students. Online group classes and private 1-to-1 tuition across all exam boards.</p>
+      <div class="hero-actions">
+        <a href="/register.html" class="btn btn-yellow">Register your interest &rarr;</a>
+        <a href="#programs" class="btn btn-outline-light">View programs</a>
+      </div>
+    </div>
+
+    <div class="stats-strip">
+      <div class="stat-item">
+        <div class="stat-val">20+</div>
+        <div class="stat-label">Years IT experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">10+</div>
+        <div class="stat-label">Years teaching</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">500+</div>
+        <div class="stat-label">Students taught</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">8/9</div>
+        <div class="stat-label">GCSE target grades</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val">A/A*</div>
+        <div class="stat-label">A-Level target grades</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Programs ─────────────────────────────────────────── -->
+<section class="section" id="programs">
+  <div class="container">
+    <div class="section-eyebrow animate-on-scroll">Programs</div>
+    <h2 class="section-title animate-on-scroll">Choose your learning path</h2>
+    <p class="section-sub animate-on-scroll">We cover Edexcel, OCR, AQA and iGCSE curricula for both GCSE and A-Level, compressing years of coursework into focused, structured study.</p>
+
+    <div class="programs-grid">
+      <div class="program-card animate-on-scroll">
+        <div class="program-icon">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Group Classes</h3>
+        <p class="desc">Online group lessons via Zoom covering the full GCSE Computer Science curriculum. Recorded so you can rewatch and revise at your own pace.</p>
+        <ul class="program-details">
+          <li>Format <span class="val">Online (Zoom)</span></li>
+          <li>Schedule <span class="val">Saturdays, 11am&ndash;12pm</span></li>
+          <li>Duration <span class="val">~6 months</span></li>
+          <li>Includes <span class="val">Recorded lessons</span></li>
+        </ul>
+        <div class="program-price">&pound;40<span>/month</span></div>
+      </div>
+
+      <div class="program-card animate-on-scroll" style="transition-delay:0.1s">
+        <div class="program-icon">
+          <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5"/></svg>
+        </div>
+        <h3>Private 1-to-1 (GCSE)</h3>
+        <p class="desc">Personalised GCSE tuition via Zoom or Teams. Individual assessments, exam prep and mock exams tailored to your needs and exam board.</p>
+        <ul class="program-details">
+          <li>Format <span class="val">Online (Zoom/Teams)</span></li>
+          <li>Schedule <span class="val">Flexible</span></li>
+          <li>Includes <span class="val">Mock exams</span></li>
+          <li>Target <span class="val">Grades 8/9</span></li>
+        </ul>
+        <div class="program-price">&pound;18<span>/hour</span></div>
+      </div>
+
+      <div class="program-card animate-on-scroll" style="transition-delay:0.2s">
+        <div class="program-icon">
+          <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        </div>
+        <h3>Private 1-to-1 (A-Level)</h3>
+        <p class="desc">Dedicated A-Level tuition covering advanced algorithms, data structures, OOP, databases, networking and computational thinking. Full NEA project support included.</p>
+        <ul class="program-details">
+          <li>Boards <span class="val">OCR, AQA, Edexcel</span></li>
+          <li>Format <span class="val">Online (Zoom/Teams)</span></li>
+          <li>NEA support <span class="val">Included</span></li>
+          <li>Target <span class="val">Grades A/A*</span></li>
+        </ul>
+        <div class="program-price">&pound;25<span>/hour</span></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:40px" class="animate-on-scroll">
+      <a href="/register.html" class="btn btn-primary">Register your interest &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── About / Why ──────────────────────────────────────── -->
+<section class="section section-alt" id="about">
+  <div class="container">
+    <div class="section-eyebrow animate-on-scroll">Why us</div>
+    <h2 class="section-title animate-on-scroll">Built around what students actually need</h2>
+    <p class="section-sub animate-on-scroll">Whether you're starting GCSE or preparing for A-Level exams, our tutoring is designed to build real understanding &mdash; not just memorisation.</p>
+
+    <div class="why-grid">
+      <div class="why-item animate-on-scroll">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div>
+          <h3>Proven track record</h3>
+          <p>Over 20 years of IT experience, 10+ years of teaching and 500+ students taught. We've transformed committed students to grades 8/9 at GCSE and A/A* at A-Level.</p>
+        </div>
+      </div>
+      <div class="why-item animate-on-scroll" style="transition-delay:0.1s">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+        </div>
+        <div>
+          <h3>GCSE &amp; A-Level coverage</h3>
+          <p>Full coverage of Edexcel, OCR, AQA and iGCSE specifications at both GCSE and A-Level. Every topic, every paper, every exam board.</p>
+        </div>
+      </div>
+      <div class="why-item animate-on-scroll" style="transition-delay:0.15s">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        </div>
+        <div>
+          <h3>Flexible online learning</h3>
+          <p>Online group classes or private 1-to-1 via Zoom and Teams &mdash; pick the format that works for your schedule and learning style.</p>
+        </div>
+      </div>
+      <div class="why-item animate-on-scroll" style="transition-delay:0.2s">
+        <div class="why-icon">
+          <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <div>
+          <h3>Hands-on programming</h3>
+          <p>Real coding practice from day one. Python challenges, past paper walkthroughs and NEA project guidance that builds genuine fluency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Testimonials ─────────────────────────────────────── -->
+<section class="section section-dark" id="testimonials">
+  <div class="container">
+    <div class="section-eyebrow animate-on-scroll">Testimonials</div>
+    <h2 class="section-title animate-on-scroll" style="color:#fff">What our students say</h2>
+    <p class="section-sub animate-on-scroll">Don't just take our word for it &mdash; hear from students and parents who've been through our programs.</p>
+
+    <div class="testimonial-slider animate-on-scroll">
+      <div class="testimonial-track" id="testimonialTrack">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Absolutely fantastic course and teacher. Very professional and organised. Excellent resources used. Thoroughly explained all topics. Pace was good. My son really enjoyed the course! My daughter will be doing this course too! Would definitely highly recommend!"</blockquote>
+          <div class="testimonial-author">Saima <span class="testimonial-role">&mdash; Parent</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Unreservedly recommended, very experienced, professional and helpful. My son learns through practical methods and easily looses focus when it comes down to theory. Teaching style is adapted to suit the individual needs. The tutor started very slow and simple in order to understand and establish the best way to work with my son."</blockquote>
+          <div class="testimonial-author">Ruby <span class="testimonial-role">&mdash; Parent</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Such a blessing during hard times. The teacher is very professional and easy to understand. The only class my child has attended where I have nothing bad to say, nothing at all! Would recommend 100% very grateful to benefit from such a teacher."</blockquote>
+          <div class="testimonial-author">Khawlah <span class="testimonial-role">&mdash; Parent</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"The Tutor has a high understanding of the course and is able to teach it in a way that students can acquire all the information required for the course. He doesn't only teach the curriculum he also adds extra information, this is to make the students understand the bigger picture. The lessons have boosted my confidence in computing. I cannot stress enough how much he has helped me get through this course."</blockquote>
+          <div class="testimonial-author">Irfaan <span class="testimonial-role">&mdash; Student</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"Great interaction and my child learnt loads. Thank you so much and highly recommend!"</blockquote>
+          <div class="testimonial-author">Amina <span class="testimonial-role">&mdash; Parent</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"GCSE taught with ease to 10yr olds! Great services, professional motivating teachers... highly recommend! Children were always supported every step of the way both in class and outside, and they enjoyed their fun learning experience."</blockquote>
+          <div class="testimonial-author">Arrshbee <span class="testimonial-role">&mdash; Parent</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"This 7 month program was great, I learnt a lot and it helped my knowledge in Computer Science. There was always an answer to my questions."</blockquote>
+          <div class="testimonial-author">Gruesome Gaming <span class="testimonial-role">&mdash; Student</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"The lessons are well structured and the teacher teaches in a way that pupils understand easily."</blockquote>
+          <div class="testimonial-author">Educare Classic <span class="testimonial-role">&mdash; Parent</span></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <blockquote>"The Tutor is professional, experienced and truly understands the content, he tailored their teaching style to my needs and always tested me before moving on, to ensure I have thoroughly understood the content. The Tutor taught me alongside the school's curriculum, but they also added extra information to allow me to grasp the full picture. I cannot stress enough how much the Tutor helped me with Computer Science. Thank you so much!"</blockquote>
+          <div class="testimonial-author">Vidhant <span class="testimonial-role">&mdash; Student</span></div>
+        </div>
+      </div>
+
+      <div class="testimonial-controls">
+        <button class="testimonial-btn" id="prevBtn" aria-label="Previous testimonial">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="testimonial-dots" id="testimonialDots"></div>
+        <button class="testimonial-btn" id="nextBtn" aria-label="Next testimonial">
+          <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Resources ────────────────────────────────────────── -->
+<section class="section" id="resources">
+  <div class="container">
+    <div class="section-eyebrow animate-on-scroll">Resources</div>
+    <h2 class="section-title animate-on-scroll">Free revision tools</h2>
+    <p class="section-sub animate-on-scroll">Recommended free tools to supplement your GCSE and A-Level learning.</p>
+
+    <div class="resources-grid" style="grid-template-columns:repeat(2,1fr)">
+      <a href="https://brightrevision.co.uk/students-python.html" target="_blank" rel="noopener" class="resource-card animate-on-scroll">
+        <div class="resource-icon">
+          <svg viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>BrightRevision Python IDE</h3>
+        <p>Free browser-based Python IDE with 164 GCSE coding challenges and instant AI feedback. No install needed &mdash; open and code.</p>
+      </a>
+      <a href="https://brightrevision.co.uk/students-quizzes.html" target="_blank" rel="noopener" class="resource-card animate-on-scroll" style="transition-delay:0.1s">
+        <div class="resource-icon">
+          <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        </div>
+        <h3>Auto-Marked Quizzes</h3>
+        <p>7,000+ auto-marked quiz questions across every GCSE and A-Level Computer Science topic with instant results and explanations.</p>
+      </a>
+      <a href="https://brightrevision.co.uk/mock-exam.html" target="_blank" rel="noopener" class="resource-card animate-on-scroll" style="transition-delay:0.15s">
+        <div class="resource-icon">
+          <svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+        </div>
+        <h3>Free Mock Exams</h3>
+        <p>Timed, auto-marked mock exams for every subject and exam board. Get a predicted grade and detailed topic breakdown.</p>
+      </a>
+      <a href="https://brightrevision.co.uk/gcse-grade-boundaries.html" target="_blank" rel="noopener" class="resource-card animate-on-scroll" style="transition-delay:0.2s">
+        <div class="resource-icon">
+          <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </div>
+        <h3>Grade Boundaries 2026</h3>
+        <p>Latest grade boundaries for AQA, OCR, Edexcel and Cambridge. See the exact marks needed for every grade at GCSE and A-Level.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Blog ─────────────────────────────────────────────── -->
+<section class="section section-alt" id="blog">
+  <div class="container">
+    <div class="section-eyebrow animate-on-scroll">Blog</div>
+    <h2 class="section-title animate-on-scroll">Revision guides &amp; tips</h2>
+    <p class="section-sub animate-on-scroll">Practical advice for GCSE and A-Level Computer Science students and parents.</p>
+
+    <div class="blog-grid">
+      <a href="/blog/how-to-get-a-grade-9-in-computer-science.html" class="blog-card animate-on-scroll">
+        <div class="date">Aug 2026</div>
+        <h3>How to Get a Grade 9 in GCSE Computer Science</h3>
+        <p>The specific habits, revision methods and exam techniques that separate grade 8 from grade 9.</p>
+        <span class="read-more">Read &rarr;</span>
+      </a>
+      <a href="/blog/is-a-level-computer-science-hard.html" class="blog-card animate-on-scroll" style="transition-delay:0.1s">
+        <div class="date">Aug 2026</div>
+        <h3>Is A-Level Computer Science Hard?</h3>
+        <p>What makes A-Level CS different from GCSE, what to expect, and how to prepare.</p>
+        <span class="read-more">Read &rarr;</span>
+      </a>
+      <a href="/blog/python-string-methods-cheat-sheet.html" class="blog-card animate-on-scroll" style="transition-delay:0.15s">
+        <div class="date">Aug 2026</div>
+        <h3>Python String Methods Cheat Sheet</h3>
+        <p>Every string method you need for the exam, with examples and common mistakes.</p>
+        <span class="read-more">Read &rarr;</span>
+      </a>
+    </div>
+    <div style="text-align:center;margin-top:32px">
+      <a href="/blog/" class="btn btn-outline animate-on-scroll">View all 13 posts &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ──────────────────────────────────────────── -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-eyebrow animate-on-scroll">Contact</div>
+    <h2 class="section-title animate-on-scroll">Get in touch</h2>
+    <p class="section-sub animate-on-scroll">Ready to start? Register your interest or ask us anything.</p>
+
+    <div class="contact-grid">
+      <div class="contact-info animate-on-scroll">
+        <div class="contact-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div>
+            <h3>Email</h3>
+            <a href="mailto:info@lcs-101.com">info@lcs-101.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <h3>Phone</h3>
+            <a href="tel:+447422689203">07422 689203</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </div>
+          <div>
+            <h3>Social</h3>
+            <p>
+              <a href="https://www.facebook.com/LearnComputerScience101/" target="_blank" rel="noopener">Facebook</a> &middot;
+              <a href="https://www.instagram.com/learncomputerscience101/" target="_blank" rel="noopener">Instagram</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form animate-on-scroll" action="https://formsubmit.co/info@lcs-101.com" method="POST">
+        <div class="form-group">
+          <span class="form-label">Name <span class="req">*</span></span>
+          <input type="text" name="name" required>
+        </div>
+        <div class="form-group">
+          <span class="form-label">Email <span class="req">*</span></span>
+          <input type="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <span class="form-label">Subject</span>
+          <input type="text" name="subject" placeholder="e.g. GCSE Python course">
+        </div>
+        <div class="form-group">
+          <span class="form-label">Message <span class="req">*</span></span>
+          <textarea name="message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="border:none">Send message &rarr;</button>
+        <input type="hidden" name="_next" value="https://lcs-101.com?sent=1">
+        <input type="hidden" name="_captcha" value="false">
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ──────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-copy">&copy; 2026 Learn Computer Science 101</div>
+    <ul class="footer-links">
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="/register.html">Register</a></li>
+      <li><a href="https://app.tutorbird.com" target="_blank" rel="noopener">Student Portal</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => {
+  document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 10);
+});
+
+document.querySelectorAll('.nav-links a[href^="#"]').forEach(a => {
+  a.addEventListener('click', () => {
+    document.getElementById('navLinks').classList.remove('open');
+  });
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+
+function animateCounters() {
+  document.querySelectorAll('.stat-val').forEach(el => {
+    const text = el.textContent.trim();
+    const match = text.match(/^(\d+)/);
+    if (!match) return;
+    const target = parseInt(match[1]);
+    const suffix = text.replace(match[1], '');
+    let current = 0;
+    const step = Math.max(1, Math.floor(target / 40));
+    const interval = setInterval(() => {
+      current += step;
+      if (current >= target) { current = target; clearInterval(interval); }
+      el.textContent = current + suffix;
+    }, 30);
+  });
+}
+
+const statsObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) { animateCounters(); statsObserver.unobserve(entry.target); }
+  });
+}, { threshold: 0.3 });
+
+const statsEl = document.querySelector('.stats-strip');
+if (statsEl) statsObserver.observe(statsEl);
+
+(function() {
+  const track = document.getElementById('testimonialTrack');
+  const dotsContainer = document.getElementById('testimonialDots');
+  const cards = track.querySelectorAll('.testimonial-card');
+  const total = cards.length;
+  let current = 0;
+  let autoTimer;
+
+  for (let i = 0; i < total; i++) {
+    const dot = document.createElement('button');
+    dot.className = 'testimonial-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Testimonial ' + (i + 1));
+    dot.addEventListener('click', function() { goTo(i); });
+    dotsContainer.appendChild(dot);
+  }
+
+  function goTo(index) {
+    current = index;
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dotsContainer.querySelectorAll('.testimonial-dot').forEach(function(d, i) {
+      d.classList.toggle('active', i === current);
+    });
+    resetAuto();
+  }
+
+  document.getElementById('prevBtn').addEventListener('click', function() { goTo((current - 1 + total) % total); });
+  document.getElementById('nextBtn').addEventListener('click', function() { goTo((current + 1) % total); });
+
+  function resetAuto() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(function() { goTo((current + 1) % total); }, 6000);
+  }
+  resetAuto();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCSE Computer Science NEA Tips — LCS-101</title>
+  <meta name="description" content="How to plan, code and document your GCSE Computer Science NEA programming project to maximise your marks.">
+  <link rel="canonical" href="https://lcs-101.com/blog/gcse-computer-science-nea-tips.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="GCSE Computer Science NEA Tips">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/logo.png" alt="Learn Computer Science" class="nav-logo-img">
+      <span class="nav-logo-text">LCS-101</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/#programs">Programs</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#resources">Resources</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="/register.html" class="nav-cta">Register Interest</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<article class="blog-post">
+  <a href="/blog/" class="back">&larr; All posts</a>
+  <div class="meta">August 2026 &middot; 5 min read</div>
+  <h1>GCSE Computer Science NEA Tips</h1>
+  <p class="lead">The NEA (Non-Exam Assessment) is your chance to show what you can build. While GCSE NEA is no longer externally assessed for most boards, it still develops the skills you'll be tested on in Paper 2 — and for A-Level, the NEA is worth 20% of your grade. Here's how to do it well.</p>
+
+  <h2>Choose the right project</h2>
+  <p>The biggest mistake students make is picking a project that's too ambitious or too simple. You want something that:</p>
+  <ul>
+    <li><strong>Has a clear problem to solve</strong> — "I want to build a quiz app" is better than "I want to make something cool"</li>
+    <li><strong>Uses multiple programming techniques</strong> — selection, iteration, functions, file handling, data structures</li>
+    <li><strong>Is achievable in the time you have</strong> — 20-40 hours of coding is typical</li>
+    <li><strong>Interests you</strong> — you'll be working on it for months, so choose something you actually care about</li>
+  </ul>
+
+  <h3>Good project ideas</h3>
+  <ul>
+    <li>A quiz system with score tracking, categories and a leaderboard (file handling + data structures)</li>
+    <li>A text-based adventure game with inventory management (OOP + complex logic)</li>
+    <li>A student grade tracker that calculates averages and generates reports (file I/O + algorithms)</li>
+    <li>A simple encryption/decryption tool (string manipulation + algorithms)</li>
+    <li>A library management system with search and borrowing (CRUD + file handling)</li>
+  </ul>
+
+  <h2>Plan before you code</h2>
+  <p>Examiners want to see evidence of planning. Before writing a single line of Python:</p>
+  <ul>
+    <li><strong>Define the problem clearly</strong> — who is the user? What do they need?</li>
+    <li><strong>List the features</strong> — break the project into specific, testable features</li>
+    <li><strong>Draw flowcharts or pseudocode</strong> — show the logic of key algorithms</li>
+    <li><strong>Design the data</strong> — what variables, lists, dictionaries or files will you need?</li>
+    <li><strong>Plan your testing</strong> — write test cases before you code (what inputs should produce what outputs?)</li>
+  </ul>
+
+  <h2>Code techniques that score marks</h2>
+  <p>Your NEA should demonstrate as many of these as possible:</p>
+  <ul>
+    <li><strong>Input validation</strong> — never trust user input; always check it's the right type and range</li>
+    <li><strong>Functions with parameters and return values</strong> — not just functions that print things</li>
+    <li><strong>File handling</strong> — reading from and writing to text or CSV files</li>
+    <li><strong>Data structures</strong> — lists, dictionaries, possibly 2D arrays</li>
+    <li><strong>Error handling</strong> — try/except blocks for predictable errors</li>
+    <li><strong>Meaningful variable names</strong> — <code>student_score</code> not <code>x</code></li>
+    <li><strong>Comments</strong> — explain <em>why</em>, not <em>what</em></li>
+  </ul>
+  <p>Practice these techniques with <a href="https://brightrevision.co.uk/students-python.html">structured coding challenges</a> before applying them to your project.</p>
+
+  <h2>Testing and documentation</h2>
+  <p>Testing is where many students lose marks because they treat it as an afterthought. Good testing means:</p>
+  <ul>
+    <li><strong>Normal data</strong> — inputs the program should handle correctly</li>
+    <li><strong>Boundary data</strong> — edge cases (empty input, maximum values, exactly-on-the-limit values)</li>
+    <li><strong>Erroneous data</strong> — inputs the program should reject (wrong type, out of range, negative numbers)</li>
+  </ul>
+  <p>For each test, record: the input, the expected output, the actual output, and whether it passed. Screenshots help.</p>
+
+  <h2>A-Level NEA: what's different</h2>
+  <p>If you're doing A-Level, the NEA is worth 20% of your final grade and expectations are significantly higher:</p>
+  <ul>
+    <li>You must use <strong>object-oriented programming</strong> — classes, inheritance, encapsulation</li>
+    <li>The project should be <strong>substantially more complex</strong> — think hundreds of lines, not dozens</li>
+    <li>You need a <strong>real stakeholder</strong> — someone who would actually use your solution</li>
+    <li>The write-up should include <strong>analysis, design, implementation, testing and evaluation</strong></li>
+  </ul>
+
+  <div class="cta-box">
+    <p><strong>Need NEA guidance?</strong> Our <a href="/#programs">private tutoring</a> includes NEA support — from choosing a project to polishing the write-up. <a href="/register.html">Register your interest</a>.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-copy">&copy; 2026 Learn Computer Science 101</div>
+    <ul class="footer-links">
+      <li><a href="/#programs">Programs</a></li>
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="https://app.tutorbird.com" target="_blank" rel="noopener">Student Portal</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

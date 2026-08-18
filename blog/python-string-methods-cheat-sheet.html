@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Python String Methods Cheat Sheet for GCSE — LCS-101</title>
+  <meta name="description" content="Every Python string method you need for GCSE Computer Science — with examples, common mistakes and exam tips.">
+  <link rel="canonical" href="https://lcs-101.com/blog/python-string-methods-cheat-sheet.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Python String Methods Cheat Sheet for GCSE">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="nav-logo">
+      <img src="/logo.png" alt="Learn Computer Science" class="nav-logo-img">
+      <span class="nav-logo-text">LCS-101</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="/#programs">Programs</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#resources">Resources</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="/register.html" class="nav-cta">Register Interest</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')" aria-label="Menu">&#9776;</button>
+  </div>
+</nav>
+
+<article class="blog-post">
+  <a href="/blog/" class="back">&larr; All posts</a>
+  <div class="meta">August 2026 &middot; 5 min read</div>
+  <h1>Python String Methods Cheat Sheet for GCSE</h1>
+  <p class="lead">String manipulation is one of the most frequently tested programming topics in GCSE Computer Science. This cheat sheet covers every string method and technique you need, with examples you can try yourself.</p>
+
+  <h2>The basics: accessing characters</h2>
+  <p>Strings in Python are sequences of characters, and each character has an index starting from 0:</p>
+  <pre><code>name = "Python"
+print(name[0])     # P
+print(name[5])     # n
+print(name[-1])    # n (last character)
+print(name[-2])    # o (second to last)</code></pre>
+
+  <h2>Slicing</h2>
+  <p>Slicing extracts a substring using <code>[start:end]</code>. The start index is included, the end is excluded:</p>
+  <pre><code>word = "Computer"
+print(word[0:4])   # Comp
+print(word[4:])    # uter
+print(word[:4])    # Comp
+print(word[::2])   # Cmue (every 2nd character)
+print(word[::-1])  # retupmoC (reversed)</code></pre>
+  <p><strong>Exam tip:</strong> The most common slicing mistake is forgetting that the end index is <em>excluded</em>. <code>"Hello"[0:3]</code> gives <code>"Hel"</code>, not <code>"Hell"</code>.</p>
+
+  <h2>Essential string methods</h2>
+
+  <h3>Changing case</h3>
+  <pre><code>text = "Hello World"
+print(text.upper())      # HELLO WORLD
+print(text.lower())      # hello world
+print(text.title())      # Hello World
+print(text.capitalize()) # Hello world
+print(text.swapcase())   # hELLO wORLD</code></pre>
+
+  <h3>Finding and counting</h3>
+  <pre><code>sentence = "the cat sat on the mat"
+print(sentence.find("cat"))     # 4 (index where "cat" starts)
+print(sentence.find("dog"))     # -1 (not found)
+print(sentence.count("the"))    # 2
+print("cat" in sentence)        # True
+print(sentence.index("cat"))    # 4 (like find, but raises error if not found)</code></pre>
+
+  <h3>Replacing and stripping</h3>
+  <pre><code>text = "  Hello World  "
+print(text.strip())              # "Hello World" (removes leading/trailing spaces)
+print(text.lstrip())             # "Hello World  "
+print(text.rstrip())             # "  Hello World"
+
+message = "I like cats"
+print(message.replace("cats", "dogs"))  # "I like dogs"</code></pre>
+
+  <h3>Splitting and joining</h3>
+  <pre><code>csv_line = "Alice,17,A"
+parts = csv_line.split(",")      # ["Alice", "17", "A"]
+print(parts[0])                   # Alice
+
+words = ["Hello", "World"]
+print(" ".join(words))            # "Hello World"
+print("-".join(words))            # "Hello-World"</code></pre>
+
+  <h3>Checking content</h3>
+  <pre><code>print("hello".isalpha())     # True (only letters)
+print("12345".isdigit())     # True (only digits)
+print("hello1".isalnum())    # True (letters or digits)
+print("HELLO".isupper())     # True
+print("hello".islower())     # True
+print("  ".isspace())        # True</code></pre>
+
+  <h2>String formatting</h2>
+  <p>There are several ways to build strings with variables:</p>
+  <pre><code>name = "Alice"
+score = 85
+
+# f-strings (recommended)
+print(f"{name} scored {score}%")
+
+# .format() method
+print("{} scored {}%".format(name, score))
+
+# Concatenation (avoid for numbers — causes TypeError)
+print(name + " scored " + str(score) + "%")</code></pre>
+  <p><strong>Exam tip:</strong> If the exam asks you to output something in a specific format, f-strings are the cleanest way. Remember to convert numbers to strings if using concatenation.</p>
+
+  <h2>Length</h2>
+  <pre><code>word = "Python"
+print(len(word))  # 6</code></pre>
+  <p><strong>Common mistake:</strong> <code>len()</code> is a function, not a method — it's <code>len(word)</code>, not <code>word.len()</code>.</p>
+
+  <h2>Iteration</h2>
+  <pre><code># Loop through each character
+for char in "Hello":
+    print(char)
+
+# Loop with index
+for i in range(len("Hello")):
+    print(i, "Hello"[i])</code></pre>
+
+  <h2>Common exam patterns</h2>
+
+  <h3>Counting vowels</h3>
+  <pre><code>word = input("Enter a word: ")
+vowels = 0
+for char in word.lower():
+    if char in "aeiou":
+        vowels += 1
+print(f"Vowels: {vowels}")</code></pre>
+
+  <h3>Reversing a string</h3>
+  <pre><code># Method 1: slicing
+reversed_word = word[::-1]
+
+# Method 2: loop
+reversed_word = ""
+for char in word:
+    reversed_word = char + reversed_word</code></pre>
+
+  <h3>Extracting initials</h3>
+  <pre><code>full_name = "John Paul Smith"
+parts = full_name.split(" ")
+initials = ""
+for part in parts:
+    initials += part[0]
+print(initials)  # JPS</code></pre>
+
+  <p>Practice all of these patterns with <a href="https://brightrevision.co.uk/students-python.html">hands-on coding challenges</a> — reading about string methods isn't the same as using them under exam conditions.</p>
+
+  <div class="cta-box">
+    <p><strong>Want to master Python for GCSE?</strong> Our <a href="/#programs">tutoring programs</a> cover every programming topic with expert guidance. <a href="/register.html">Register your interest</a>.</p>
+  </div>
+</article>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-copy">&copy; 2026 Learn Computer Science 101</div>
+    <ul class="footer-links">
+      <li><a href="/#programs">Programs</a></li>
+      <li><a href="/#contact">Contact</a></li>
+      <li><a href="https://app.tutorbird.com" target="_blank" rel="noopener">Student Portal</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>
