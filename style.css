@@ -1231,16 +1231,21 @@ h1, h2, h3, h4 {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 68px;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background: #ffffff;
-    padding: 32px 24px;
-    gap: 24px;
-    z-index: 999;
+    padding: 100px 32px 32px;
+    gap: 20px;
+    z-index: 998;
     overflow-y: auto;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+    align-items: flex-start;
+  }
+
+  .nav-links.open a {
+    font-size: 18px;
+    color: var(--text);
   }
 
   .hero-floating, .hero-orbit { display: none; }
